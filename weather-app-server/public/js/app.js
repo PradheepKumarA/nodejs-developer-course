@@ -9,7 +9,7 @@ formElement.addEventListener('submit', (e) => {
 
     let searchText = searchField.value;
 
-    fetch('http://localhost:3000/weather?search=' + searchText).then((response) => {
+    fetch('/weather?search=' + searchText).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error;
