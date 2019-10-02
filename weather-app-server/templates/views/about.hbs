@@ -1,15 +1,19 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
-    <link rel="stylesheet" href="./css/app.css">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>
+    <div class="main-content">
         {{>header}}
-        {{name}}
-        <img src="/img/sorry-images.jpg">
-    </h1>
+        <img class="smiley" src="/img/sorry-images.jpg" />
+    </div>
+
+    {{>footer}}
 </body>
 
 </html>

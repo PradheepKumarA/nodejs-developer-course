@@ -9,8 +9,6 @@ formElement.addEventListener('submit', (e) => {
 
     let searchText = searchField.value;
 
-    console.log('temp', searchText);
-
     fetch('http://localhost:3000/weather?search=' + searchText).then((response) => {
         response.json().then((data) => {
             if (data.error) {

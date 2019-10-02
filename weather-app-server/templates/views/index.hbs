@@ -1,23 +1,29 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
-    <link rel="stylesheet" href="./css/app.css">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>
+
+    <div class="main-content">
         {{>header}}
-    </h1>
-    {{name}}
+        <p>Use this site to get your weather!</p>
 
-    <form>
-        <input>
-        <button>Search</button>
-    </form>
+        <form>
+            <input>
+            <button>Search</button>
+        </form>
 
-    <p id='message-1'></p>
-    <p id='message-2'></p>
+        <p id='message-1'></p>
+        <p id='message-2'></p>
+
+    </div>
+    {{>footer}}
+    <script src='/js/app.js'></script>
 </body>
-<script src='/js/app.js'></script>
 
 </html>
